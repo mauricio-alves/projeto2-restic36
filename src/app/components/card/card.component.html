@@ -1,14 +1,14 @@
 <mat-card class="example-card" appearance="outlined">
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <img mat-card-image [src]="'https://image.tmdb.org/t/p/w500' + movieData.poster_path" [alt]="movieData.title">
   <mat-card-content>
     <p>
-      <strong>Deadpool & Wolverine</strong>
+      <strong>{{movieData.title}}</strong>
     </p>
-    <p>Lancamento: 23/07/2024</p>
-    <p>Nota:<strong> 10</strong></p>
+    <p>Lançamento: {{movieData.release_date}}</p>
+    <p>Nota:<strong> {{movieData.vote_average}}</strong></p>
   </mat-card-content>
   <mat-card-actions>
-    <a mat-flat-button href="movies/2">Ver Detalhes</a>
+    <a mat-flat-button [routerLink]="['/movies', movieData.id]">Ver Detalhes</a>
     <a mat-flat-button href="/">Adicionar a lista</a>
   </mat-card-actions>
 </mat-card>

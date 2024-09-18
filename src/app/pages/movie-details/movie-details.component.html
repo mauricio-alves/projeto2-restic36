@@ -1,1 +1,35 @@
-<p>movie-details works!</p>
+<section>
+  <div class='container' [ngStyle]="{'background-image': imageBaseBackdropUrl}">
+    <div class='image'>
+      <img mat-card-image [src]="imageBaseUrl + movie?.poster_path" [alt]="movie?.title" />
+    </div>
+    <div class='content'>
+      <h2>
+        <strong>{{movie?.title}}</strong>
+      </h2>
+      <p>
+        <strong>Lançamento:</strong>
+        {{movie?.release_date | date: 'dd/MM/yyyy'}}
+      </p>
+      <p class='genres'>
+        <strong>Gêneros:</strong>
+        <!-- {movie?.genres.map((genre) => {
+        return <span key={genre.id}>{genre.name}.</span>;
+        })} -->
+      </p>
+      <p>
+        <strong>Nota: </strong>
+        <!-- <span>{{movie?.vote_average | fixed:1 }}</span> -->
+      </p>
+      <p class='text'>
+        <strong>Sinopse: </strong>
+        {{movie?.overview}}
+      </p>
+      <div>
+        <a mat-flat-button href="/">
+          Voltar para a Home
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
