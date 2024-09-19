@@ -11,15 +11,9 @@
         <strong>Lançamento:</strong>
         {{movie?.release_date | date: 'dd/MM/yyyy'}}
       </p>
-      <p class='genres'>
-        <strong>Gêneros:</strong>
-        <!-- {movie?.genres.map((genre) => {
-        return <span key={genre.id}>{genre.name}.</span>;
-        })} -->
-      </p>
       <p>
         <strong>Nota: </strong>
-        <!-- <span>{{movie?.vote_average | fixed:1 }}</span> -->
+        <span>{{movie?.vote_average | fixed:1 }}</span>
       </p>
       <p class='text'>
         <strong>Sinopse: </strong>

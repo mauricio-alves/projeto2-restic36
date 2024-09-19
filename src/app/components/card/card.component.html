@@ -5,10 +5,10 @@
       <strong>{{movieData.title}}</strong>
     </p>
     <p>Lançamento: {{movieData.release_date}}</p>
-    <p>Nota:<strong> {{movieData.vote_average}}</strong></p>
+    <p>Nota:<strong> {{movieData.vote_average | fixed:1 }}</strong></p>
   </mat-card-content>
-  <mat-card-actions>
+  <mat-card-actions class="btns">
     <a mat-flat-button [routerLink]="['/movies', movieData.id]">Ver Detalhes</a>
-    <a mat-flat-button href="/">Adicionar a lista</a>
+    <a mat-stroked-button href="/">Remover</a>
   </mat-card-actions>
 </mat-card>

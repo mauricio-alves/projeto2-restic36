@@ -3,11 +3,12 @@ import { CardComponent } from '../../components/card/card.component';
 import { MovieInterface } from '../../interfaces/movie-interface';
 import { CommonModule } from '@angular/common';
 import { MovieService } from '../../services/movie.service';
+import { MovieFormComponent } from "../../components/movie-form/movie-form.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CardComponent, CommonModule],
+  imports: [CardComponent, CommonModule, MovieFormComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

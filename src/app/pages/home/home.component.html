@@ -1,3 +1,11 @@
 <section>
-  <app-card *ngFor="let movie of movies" [movieData]="movie"></app-card>
+  <div class="title">
+    <h1>Catálogo de Filmes</h1>
+  </div>
+  <div class="form">
+    <app-movie-form></app-movie-form>
+  </div>
+  <div class="content">
+    <app-card *ngFor="let movie of movies" [movieData]="movie"></app-card>
+  </div>
 </section>

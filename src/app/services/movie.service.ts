@@ -18,4 +18,14 @@ export class MovieService {
     const data = await fetch(`${this.url}/${id}`);
     return data.json();
   }
+
+  async addMovie(movie: MovieInterface): Promise<void> {
+    await fetch(this.url, {
+      method: 'POST',
+      body: JSON.stringify(movie),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+  }
 }

@@ -1,0 +1,45 @@
+<form class="example-form" (ngSubmit)="onSubmit()" [formGroup]="movieForm">
+  <h3>Adicionar um filme</h3>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Nome do filme</mat-label>
+    <input matInput type="text" formControlName="title" required>
+  </mat-form-field>
+
+  <div class="center">
+    <mat-form-field class="example-full-width">
+      <mat-label>Data de lançamento</mat-label>
+      <input matInput type="text" formControlName="release_date" required placeholder="Ex.: 08/07/2001"
+        pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$">
+      <div *ngIf="movieForm.get('release_date')?.errors?.['pattern']">
+        Formato de data inválido. Use dd/mm/yyyy.
+      </div>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Nota</mat-label>
+      <input matInput type="number" formControlName="vote_average" required min="0" max="10">
+    </mat-form-field>
+  </div>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>URL do poster</mat-label>
+    <input matInput type="text" formControlName="poster_path" required
+      placeholder="Ex.: /xqPSxMaJ36etkUif4VggAX9tLu0.jpg">
+  </mat-form-field>
+
+  <mat-form-field class=" example-full-width">
+    <mat-label>URL da imagem de fundo</mat-label>
+    <input matInput type="text" formControlName="backdrop_path" required
+      placeholder="Ex.: /mKOBdgaEFguADkJhfFslY7TYxIh.jpg">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Sinopse</mat-label>
+    <textarea matInput type="text" formControlName="overview" required></textarea>
+  </mat-form-field>
+
+  <div>
+    <button mat-flat-button type="submit">Adicionar</button>
+  </div>
+</form>

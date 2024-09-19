@@ -35,12 +35,6 @@
   padding: 5px;
 }
 
-.genres {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-}
-
 h2 {
   font-size: 2rem;
 }

@@ -11,16 +11,13 @@ POST http://localhost:3000/movies/
 Content-Type: application/json
 
 {
-    "id":"3",
-    "name": "Front-end e UX/UI",
-    "description": "Dê vida às suas ideias! Domine as técnicas de design de interface e desenvolvimento front-end para criar experiências digitais incríveis. Explore nossa trilha Front-end e UX/UI agora!",
-    "image": "../../../assets/images/card-frontend.png",
-    "professor": [
-        "João",
-        "Paulo"
-    ],
-    "cargaHoraria": 280,
-    "items": []
+    "id":"238",
+    "title": "The Godfather",
+    "overview": "Abrangendo os anos de 1945 a 1955, uma crônica da fictícia família criminosa ítalo-americana Corleone. Quando o patriarca da família do crime organizado, Vito Corleone, mal sobrevive a um atentado contra sua vida, seu filho mais novo, Michael, intervém para cuidar dos supostos assassinos, lançando uma campanha de vingança sangrenta.",
+    "poster_path": "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+    "backdrop_path": "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+    "release_date": "1972-03-14",
+    "vote_average": 8.69
 }
 
 ### Requisição de Alteração de dados (PUT)

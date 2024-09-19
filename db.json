@@ -3,7 +3,11 @@
     {
       "adult": false,
       "backdrop_path": "/9l1eZiJHmhr5jIlthMdJN5WYoff.jpg",
-      "genre_ids": [28, 35, 878],
+      "genre_ids": [
+        28,
+        35,
+        878
+      ],
       "id": "533535",
       "original_language": "en",
       "original_title": "Deadpool & Wolverine",
@@ -19,7 +23,13 @@
     {
       "adult": false,
       "backdrop_path": "/mKOBdgaEFguADkJhfFslY7TYxIh.jpg",
-      "genre_ids": [28, 878, 35, 12, 53],
+      "genre_ids": [
+        28,
+        878,
+        35,
+        12,
+        53
+      ],
       "id": "365177",
       "original_language": "en",
       "original_title": "Borderlands",
@@ -35,7 +45,11 @@
     {
       "adult": false,
       "backdrop_path": "/cyKH7pDFlxIXluqRyNoHHEpxSDX.jpg",
-      "genre_ids": [80, 28, 53],
+      "genre_ids": [
+        80,
+        28,
+        53
+      ],
       "id": "646097",
       "original_language": "en",
       "original_title": "Rebel Ridge",
@@ -51,7 +65,12 @@
     {
       "adult": false,
       "backdrop_path": "/lgkPzcOSnTvjeMnuFzozRO5HHw1.jpg",
-      "genre_ids": [16, 10751, 35, 28],
+      "genre_ids": [
+        16,
+        10751,
+        35,
+        28
+      ],
       "id": "519182",
       "original_language": "en",
       "original_title": "Despicable Me 4",
@@ -67,7 +86,13 @@
     {
       "adult": false,
       "backdrop_path": "/stKGOm8UyhuLPR9sZLjs5AkmncA.jpg",
-      "genre_ids": [16, 10751, 12, 35, 14],
+      "genre_ids": [
+        16,
+        10751,
+        12,
+        35,
+        14
+      ],
       "id": "1022789",
       "original_language": "en",
       "original_title": "Inside Out 2",
@@ -83,7 +108,10 @@
     {
       "adult": false,
       "backdrop_path": "/cgKZtNSETjXJPkAQ4rasV7dnyQH.jpg",
-      "genre_ids": [35, 14],
+      "genre_ids": [
+        35,
+        14
+      ],
       "id": "917496",
       "original_language": "en",
       "original_title": "Beetlejuice Beetlejuice",
@@ -99,7 +127,12 @@
     {
       "adult": false,
       "backdrop_path": "/rwakNepsh0dXVcTtWKUVbDsSYYZ.jpg",
-      "genre_ids": [28, 80, 53, 35],
+      "genre_ids": [
+        28,
+        80,
+        53,
+        35
+      ],
       "id": "573435",
       "original_language": "en",
       "original_title": "Bad Boys: Ride or Die",
@@ -115,7 +148,11 @@
     {
       "adult": false,
       "backdrop_path": "/7aPrv2HFssWcOtpig5G3HEVk3uS.jpg",
-      "genre_ids": [28, 12, 53],
+      "genre_ids": [
+        28,
+        12,
+        53
+      ],
       "id": "718821",
       "original_language": "en",
       "original_title": "Twisters",
@@ -131,7 +168,12 @@
     {
       "adult": false,
       "backdrop_path": "/9juRmk8QjcsUcbrevVu5t8VZy5G.jpg",
-      "genre_ids": [28, 12, 80, 53],
+      "genre_ids": [
+        28,
+        12,
+        80,
+        53
+      ],
       "id": "923667",
       "original_language": "cn",
       "original_title": "九龍城寨之圍城",
@@ -147,7 +189,11 @@
     {
       "adult": false,
       "backdrop_path": "/tCQfubckzzcuCbsGugkpLhfjS5z.jpg",
-      "genre_ids": [28, 53, 80],
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
       "id": "970347",
       "original_language": "en",
       "original_title": "The Killer",
@@ -163,7 +209,10 @@
     {
       "adult": false,
       "backdrop_path": "/9BQqngPfwpeAfK7c2H3cwIFWIVR.jpg",
-      "genre_ids": [10749, 18],
+      "genre_ids": [
+        10749,
+        18
+      ],
       "id": "1079091",
       "original_language": "en",
       "original_title": "It Ends with Us",
@@ -179,7 +228,11 @@
     {
       "adult": false,
       "backdrop_path": "/9SSEUrSqhljBMzRe4aBTh17rUaC.jpg",
-      "genre_ids": [27, 878, 28],
+      "genre_ids": [
+        27,
+        878,
+        28
+      ],
       "id": "945961",
       "original_language": "en",
       "original_title": "Alien: Romulus",
@@ -195,7 +248,10 @@
     {
       "adult": false,
       "backdrop_path": "/sIzZQdXY21sEks9lGkGuXzqdGSA.jpg",
-      "genre_ids": [14, 35],
+      "genre_ids": [
+        14,
+        35
+      ],
       "id": "4011",
       "original_language": "en",
       "original_title": "Beetlejuice",
@@ -211,7 +267,12 @@
     {
       "adult": false,
       "backdrop_path": "/hdFIdXwS8FSN2wIsuotjW1mshI0.jpg",
-      "genre_ids": [16, 35, 12, 10751],
+      "genre_ids": [
+        16,
+        35,
+        12,
+        10751
+      ],
       "id": "831815",
       "original_language": "en",
       "original_title": "Saving Bikini Bottom: The Sandy Cheeks Movie",
@@ -227,7 +288,13 @@
     {
       "adult": false,
       "backdrop_path": "/1wP1phHo2CROOqzv7Azs0MT5esU.jpg",
-      "genre_ids": [16, 35, 10751, 12, 28],
+      "genre_ids": [
+        16,
+        35,
+        10751,
+        12,
+        28
+      ],
       "id": "748783",
       "original_language": "en",
       "original_title": "The Garfield Movie",
@@ -243,7 +310,11 @@
     {
       "adult": false,
       "backdrop_path": "/2RVcJbWFmICRDsVxRI8F5xRmRsK.jpg",
-      "genre_ids": [27, 878, 53],
+      "genre_ids": [
+        27,
+        878,
+        53
+      ],
       "id": "762441",
       "original_language": "en",
       "original_title": "A Quiet Place: Day One",
@@ -259,7 +330,11 @@
     {
       "adult": false,
       "backdrop_path": "/bizhlTVjifYQUu4Xrdt7m3TYr7d.jpg",
-      "genre_ids": [80, 27, 53],
+      "genre_ids": [
+        80,
+        27,
+        53
+      ],
       "id": "1226578",
       "original_language": "en",
       "original_title": "Longlegs",
@@ -275,7 +350,10 @@
     {
       "adult": false,
       "backdrop_path": "/okVLmXL5y18dfN2R4ufMZEGaeCd.jpg",
-      "genre_ids": [28, 80],
+      "genre_ids": [
+        28,
+        80
+      ],
       "id": "1160018",
       "original_language": "hi",
       "original_title": "किल",
@@ -291,7 +369,10 @@
     {
       "adult": false,
       "backdrop_path": "/4ft6TR9wA6bra0RLL6G7JFDQ5t1.jpg",
-      "genre_ids": [28, 35],
+      "genre_ids": [
+        28,
+        35
+      ],
       "id": "704239",
       "original_language": "en",
       "original_title": "The Union",
@@ -307,7 +388,11 @@
     {
       "adult": false,
       "backdrop_path": "/x2thJwMJ6oGlhn7UC4vSwHltEw0.jpg",
-      "genre_ids": [28, 53, 10770],
+      "genre_ids": [
+        28,
+        53,
+        10770
+      ],
       "id": "1115396",
       "original_language": "en",
       "original_title": "Hunting Games",
@@ -319,6 +404,15 @@
       "video": false,
       "vote_average": 4.5,
       "vote_count": 9
+    },
+    {
+      "id": "107142",
+      "title": "The Godfather",
+      "release_date": "14/03/1972",
+      "vote_average": 8.5,
+      "poster_path": "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+      "backdrop_path": "/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
+      "overview": "Abrangendo os anos de 1945 a 1955, uma crônica da fictícia família criminosa ítalo-americana Corleone. Quando o patriarca da família do crime organizado, Vito Corleone, mal sobrevive a um atentado contra sua vida, seu filho mais novo, Michael, intervém para cuidar dos supostos assassinos, lançando uma campanha de vingança sangrenta."
     }
   ]
 }
