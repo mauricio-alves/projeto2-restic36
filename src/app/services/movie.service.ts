@@ -28,4 +28,11 @@ export class MovieService {
       },
     });
   }
+
+  async deleteMovie(id: string): Promise<void> {
+    await fetch(`${this.url}/${id}`, {
+      method: 'DELETE',
+    });
+    return;
+  }
 }

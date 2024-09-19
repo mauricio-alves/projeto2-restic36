@@ -9,6 +9,6 @@
   </mat-card-content>
   <mat-card-actions class="btns">
     <a mat-flat-button [routerLink]="['/movies', movieData.id]">Ver Detalhes</a>
-    <a mat-stroked-button href="/">Remover</a>
+    <button mat-stroked-button (click)="deleteMovie(movieData.id)">Remover</button>
   </mat-card-actions>
 </mat-card>
