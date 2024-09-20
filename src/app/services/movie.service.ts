@@ -33,6 +33,5 @@ export class MovieService {
     await fetch(`${this.url}/${id}`, {
       method: 'DELETE',
     });
-    return;
   }
 }

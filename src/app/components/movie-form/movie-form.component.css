@@ -17,3 +17,20 @@
   display: flex;
   gap: 1rem;
 }
+
+/* --------------  MEDIA QUERIES ----------------  */
+@media (max-width: 490px) {
+  .example-form {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .example-form {
+    max-width: 350px;
+  }
+
+  .center {
+    gap: 0.5rem;
+  }
+}

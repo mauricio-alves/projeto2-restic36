@@ -43,3 +43,15 @@ h2 {
   text-align: justify;
   margin-bottom: 10px;
 }
+
+/* --------------  MEDIA QUERY ----------------  */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .image img {
+    width: 250px;
+  }
+}

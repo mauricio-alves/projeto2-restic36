@@ -23,11 +23,3 @@ Content-Type: application/json
 ### Excluir um filme
 DELETE http://localhost:3000/movies/238 HTTP/1.1
 Content-Type: application/json
-
-### Filtros
-GET http://localhost:3000/movies?name=Full-Stack HTTP/1.1
-Content-Type: application/json
-
-### Ordenação dos filmes
-GET http://localhost:3000/movies/?_sort=title&_order=desc HTTP/1.1
-Content-Type: application/json

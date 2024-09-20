@@ -21,3 +21,10 @@ header h1 {
   text-align: center;
   margin: 0;
 }
+
+/* --------------  MEDIA QUERY ----------------  */
+@media (max-width: 450px) {
+  .logo {
+    display: none;
+  }
+}

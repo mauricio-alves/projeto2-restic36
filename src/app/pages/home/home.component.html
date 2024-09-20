@@ -5,7 +5,15 @@
   <div class="form">
     <app-movie-form></app-movie-form>
   </div>
-  <div class="content">
-    <app-card *ngFor="let movie of movies" [movieData]="movie"></app-card>
+  <div class="order">
+    <p>Ordenar por:</p>
+    <button mat-stroked-button (click)="nameSort()">Nome</button>
+    <button mat-stroked-button (click)="rateSort()">Nota</button>
   </div>
+  <div class="content">
+    <app-card *ngFor="let movie of movies" [movieData]="movie" (deletar)="deleteMovie($event)"></app-card>
+  </div>
+  <button class="scroll-up" (click)="scrollToTop()" *ngIf="showScrollUpButton">
+    <mat-icon fontIcon="arrow_upward"></mat-icon>
+  </button>
 </section>

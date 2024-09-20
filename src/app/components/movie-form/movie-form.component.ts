@@ -35,7 +35,10 @@ export class MovieFormComponent {
   movieService: MovieService = inject(MovieService);
 
   constructor(private fb: FormBuilder) {
+    // Inicializa o formulário
     this.formValues = {} as MovieInterface;
+
+    // Cria e valida o formulário
     this.movieForm = this.fb.group({
       title: ['', Validators.required],
       release_date: [
@@ -54,6 +57,7 @@ export class MovieFormComponent {
     });
   }
 
+  // Função para adicionar filme
   async onSubmit() {
     const randomId = Math.floor(Math.random() * 1000000).toString();
 
