@@ -11,8 +11,9 @@ Para este projeto optei por criar uma aplicação que exiba na tela uma lista de
 1. Primeiro, clone este repositório;
 2. Abra com qualquer IDE;
 3. Abra o terminal e rode o comando `npm install`;
-4. Então, rode o comando `npm start`;
-5. Uma janela abrirá no seu navegador e a aplicação será executada.
+4. Então, rode o comando `json-server db.json`;
+5. Em outro terminal, rode o comando `npm start`;
+6. Uma janela abrirá no seu navegador e a aplicação será executada.
 
 ## Tecnologias utilizadas
 
