@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, EventEmitter, inject, Output } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import {
@@ -11,8 +11,8 @@ import {
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CommonModule } from '@angular/common';
-import { MovieService } from '../../services/movie.service';
 import { MovieInterface } from '../../interfaces/movie-interface';
+import { HotToastService } from '@ngxpert/hot-toast';
 
 @Component({
   selector: 'app-movie-form',
@@ -30,9 +30,10 @@ import { MovieInterface } from '../../interfaces/movie-interface';
   styleUrl: './movie-form.component.css',
 })
 export class MovieFormComponent {
+  private toast: HotToastService = inject(HotToastService);
   movieForm: FormGroup;
   formValues: MovieInterface;
-  movieService: MovieService = inject(MovieService);
+  @Output() adicionar = new EventEmitter<MovieInterface>();
 
   constructor(private fb: FormBuilder) {
     // Inicializa o formulário
@@ -57,8 +58,8 @@ export class MovieFormComponent {
     });
   }
 
-  // Função para adicionar filme
-  async onSubmit() {
+  // Função que emitirá o evento de adicionar filme para o componente pai (HomeComponent) e limpará o formulário após a adição do filme
+  addMovie(): void {
     const randomId = Math.floor(Math.random() * 1000000).toString();
 
     if (this.movieForm.valid) {
@@ -66,16 +67,11 @@ export class MovieFormComponent {
         id: randomId,
         ...this.movieForm.value,
       };
-      try {
-        const response = await this.movieService.addMovie(this.formValues);
-        console.log(response);
-      } catch (error) {
-        console.log('Erro ao adicionar filme', error);
-      }
+      this.adicionar.emit(this.formValues);
       this.formValues = {} as MovieInterface;
       this.movieForm.reset();
     } else {
-      console.log('Formulário inválido');
+      this.toast.error('Formulário inválido');
     }
   }
 }

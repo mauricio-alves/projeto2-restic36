@@ -3,7 +3,7 @@
     <h1>Catálogo de Filmes</h1>
   </div>
   <div class="form">
-    <app-movie-form></app-movie-form>
+    <app-movie-form (adicionar)="addMovie($event)"></app-movie-form>
   </div>
   <div class="order">
     <p>Ordenar por:</p>

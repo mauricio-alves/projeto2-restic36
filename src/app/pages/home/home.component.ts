@@ -6,6 +6,7 @@ import { MovieService } from '../../services/movie.service';
 import { MovieFormComponent } from '../../components/movie-form/movie-form.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { HotToastService } from '@ngxpert/hot-toast';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +22,7 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
+  private toast: HotToastService = inject(HotToastService);
   movies: MovieInterface[] = [];
   movieService: MovieService = inject(MovieService);
 
@@ -30,32 +32,43 @@ export class HomeComponent {
     this.loadMovies();
   }
 
-  // Função para buscar filmes
+  // Função para buscar todos os filmes
   loadMovies(): void {
     this.movieService.getAllMovies().then((movies) => {
       this.movies = movies;
     });
   }
 
-  // Função para ordenar por nome
+  // Função para ordenar os filmes por nome
   nameSort() {
     this.movies.sort((a, b) => a.title.localeCompare(b.title));
   }
 
-  // Função para ordenar por nota
+  // Função para ordenar os filmes por nota
   rateSort() {
     this.movies.sort((a, b) => b.vote_average - a.vote_average);
   }
 
-  // Função para remover filme
+  // Função para adicionar filme pelo formulário
+  async addMovie(movieForm: MovieInterface): Promise<void> {
+    try {
+      await this.movieService.addMovie(movieForm);
+      this.toast.success('Filme adicionado com sucesso');
+      this.loadMovies();
+    } catch (error) {
+      this.toast.error('Erro ao adicionar filme');
+      console.error('Erro ao adicionar filme', error);
+    }
+  }
+
+  // Função para remover filme pelo id
   async deleteMovie(id: string): Promise<void> {
     try {
-      // Remove o filme da lista
       await this.movieService.deleteMovie(id);
-      // Atualiza a lista de filmes
+      this.toast.success('Filme removido com sucesso');
       this.loadMovies();
-      console.log('Filme removido com sucesso');
     } catch (error) {
+      this.toast.error('Erro ao remover filme');
       console.error('Erro ao remover filme', error);
     }
   }

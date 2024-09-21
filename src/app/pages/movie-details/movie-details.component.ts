@@ -4,7 +4,7 @@ import { MovieService } from '../../services/movie.service';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FixedPipe } from '../../fixed.pipe';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-movie-details',
@@ -22,6 +22,7 @@ export class MovieDetailsComponent {
   imageBaseBackdropUrl = '';
 
   constructor() {
+    // Captura o id do filme pela URL e busca o filme na API
     const id = Number(this.route.snapshot.params['id']);
     this.movieService.getMovieById(id).then((movie) => {
       this.movie = movie;
